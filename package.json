@@ -1,7 +1,7 @@
 {
   "name": "lowcolor-syntax-dark",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Fork of Atom Dark Syntax theme with fewer colors and more font weights/styles.",
   "repository": "https://github.com/imyxh/lowcolor-syntax-dark",
   "license": "GPLv3",
