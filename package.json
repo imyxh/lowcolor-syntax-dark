@@ -1,0 +1,11 @@
+{
+  "name": "atom-lowcolor-syntax-dark",
+  "theme": "syntax",
+  "version": "v0.1.2",
+  "description": "Modification of Atom Dark Syntax theme with fewer colors and more font weights/styles.",
+  "repository": "https://github.com/imyxh/atom-lowcolor-syntax-dark",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
