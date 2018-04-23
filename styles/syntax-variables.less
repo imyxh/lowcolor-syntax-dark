@@ -3,15 +3,15 @@
 
 // General colors
 @syntax-text-color: hsl(0, 0%, 85%);
-@syntax-cursor-color: yellow;
-@syntax-selection-color: hsl(48, 100%, 12%);
+@syntax-cursor-color: hsl(35, 100%, 70%);
+@syntax-selection-color: hsla(35, 100%, 70%, 0.2);
 @syntax-selection-flash-color: #eee;
-@syntax-background-color: #1d1f21;
+@syntax-background-color: hsl(0, 0%, 8%);
 
 // Guide colors
 @syntax-wrap-guide-color: rgba(197, 200, 198, .1);
 @syntax-indent-guide-color: rgba(197, 200, 198, .2);
-@syntax-invisible-character-color: rgba(197, 200, 198, .2);
+@syntax-invisible-character-color: hsla(0, 0%, 83%, 0.2);
 
 // For find and replace markers
 @syntax-result-marker-color: #888;
@@ -19,9 +19,9 @@
 
 // Gutter colors
 @syntax-gutter-text-color: @syntax-text-color;
-@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
-@syntax-gutter-background-color: lighten(@syntax-background-color, 5%);
-@syntax-gutter-background-color-selected: rgba(255, 255, 255, 0.14);
+@syntax-gutter-text-color-selected: white;
+@syntax-gutter-background-color: lighten(@syntax-background-color, 2%);
+@syntax-gutter-background-color-selected: @syntax-selection-color;
 
 // For git diff info. i.e. in the gutter
 @syntax-color-renamed: #96CBFE;
@@ -30,13 +30,18 @@
 @syntax-color-removed: #CC6666;
 
 // For language entity colors
-@syntax-color-variable: #C6C5FE;
-@syntax-color-constant: #99CC99;
-@syntax-color-property: #EDEDED;
-@syntax-color-value: hsl(347, 100%, 58%);
-@syntax-color-function: hsl(231, 100%, 83%);
+@syntax-color-variable: @syntax-color-value;
+@syntax-color-constant: @syntax-color-value;
+@syntax-color-property: @syntax-color-value;
+
+// protanomalic/protanotopic version: @syntax-color-value: hsl(118, 68%, 68%);
+@syntax-color-value: hsl(347, 100%, 62%); // uncomment if above is applied
+
+// tritanomalic/tritanopic version: @syntax-color-function: hsl(118, 68%, 68%);
+@syntax-color-function: hsl(265, 69%, 69%); // uncomment if above is applied
+
 @syntax-color-method: @syntax-color-function;
-@syntax-color-class: hsl(209, 100%, 83%);
+@syntax-color-class: @syntax-color-function;
 @syntax-color-keyword: white;
 @syntax-color-tag: #96CBFE;
 @syntax-color-attribute: #FF73FD;
