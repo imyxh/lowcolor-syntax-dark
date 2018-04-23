@@ -4,6 +4,7 @@ atom-text-editor {
 
   .invisible-character {
     color: @syntax-invisible-character-color;
+    font-weight: 100;
   }
 
   .indent-guide {
@@ -16,10 +17,19 @@ atom-text-editor {
 
   .gutter {
     background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+    font-weight: 200;
   }
   .gutter .cursor-line {
     background-color: @syntax-gutter-background-color-selected;
+    color: @syntax-gutter-text-color-selected;
+    font-weight: 500;
   }
+
+  .line-number {
+    opacity: 0.9;
+  }
+
   .line-number.cursor-line-no-selection {
     background-color: @syntax-gutter-background-color-selected;
   }
