@@ -23,7 +23,7 @@
 
   &.syntax--operator {
     color: @syntax-text-color;
-    font-weight: 500;
+    font-weight: 400;
   }
 }
 
@@ -37,14 +37,15 @@
 }
 
 .syntax--constant {
-  color: hsl(14, 94%, 57%);
+  color: @syntax-color-constant;
 
   &.syntax--numeric {
     color: @syntax-color-value;
   }
 
   &.syntax--language {
-    font-style: italic;
+    color: @syntax-color-value;
+    font-style: oblique;
   }
 }
 
@@ -83,7 +84,7 @@
     &.syntax--double.syntax--block.syntax--sql {
       font-style: italic;
       font-weight: 200;
-      color: hsl(266, 67%, 65%);
+      color: @syntax-color-function;
 
       .syntax--punctuation {
         color: inherit;
