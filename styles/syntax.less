@@ -96,9 +96,9 @@
     }
   }
 
-  .syntax--constant {
+  /*.syntax--constant {
     color: #00A0A0;
-  }
+  } consider re-adding? */
 
   &.syntax--regexp {
     color: #E9C062;
@@ -128,7 +128,15 @@
   color: white;
 
   &.syntax--function {
-    color: @syntax-color-function;
+    color: @syntax-color-tag;
+
+      &.syntax--builtin {
+        color: @syntax-color-decorator;
+      }
+
+      &.syntax--magic {
+        color: @syntax-color-function;
+      }
   }
 
   &.syntax--constant {
@@ -152,6 +160,10 @@
 
   &.syntax--name.syntax--type {
     text-decoration: underline;
+  }
+
+  &.syntax--entity.syntax--name.syntax--function.syntax--decorator {
+    color: @syntax-color-decorator;
   }
 
   &.syntax--other.syntax--attribute-name {
@@ -180,6 +192,14 @@
     &.syntax--parameters {
       color: @syntax-text-color;
     }
+  }
+
+  &.syntax--function-call {
+    color: @syntax-color-function-call;
+
+      &.syntax--arguments {
+        color: @syntax-text-color;
+      }
   }
 
   &.syntax--preprocessor.syntax--c {
