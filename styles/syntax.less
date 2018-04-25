@@ -40,11 +40,11 @@
   color: @syntax-color-constant;
 
   &.syntax--numeric {
-    color: @syntax-color-value;
+    color: @syntax-color-two;
   }
 
   &.syntax--language {
-    color: @syntax-color-value;
+    color: @syntax-color-two;
     font-style: oblique;
   }
 }
@@ -79,12 +79,12 @@
   color: #A8FF60;
 
   &.syntax--quoted {
-    color: @syntax-color-value;
+    color: @syntax-color-two;
 
     &.syntax--double.syntax--block.syntax--sql {
       font-style: italic;
       font-weight: 200;
-      color: @syntax-color-function;
+      color: @syntax-color-one;
 
       .syntax--punctuation {
         color: inherit;
@@ -135,7 +135,7 @@
       }
 
       &.syntax--magic {
-        color: @syntax-color-function;
+        color: @syntax-color-one;
       }
   }
 
@@ -153,7 +153,7 @@
   color: #96CBFE;
 }
 .syntax--source .syntax--entity.syntax--other.syntax--attribute-name {
-  color: #FF73FD;
+  color: @syntax-color-one;
 }
 
 .syntax--entity {
@@ -167,7 +167,7 @@
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: #FF73FD;
+    color: @syntax-color-one;
   }
 
   &.syntax--name.syntax--tag.syntax--namespace,
@@ -187,7 +187,7 @@
   }
 
   &.syntax--function {
-    color: @syntax-color-function;
+    color: @syntax-color-one;
 
     &.syntax--parameters {
       color: @syntax-text-color;
@@ -253,7 +253,7 @@
 
   &.syntax--property-group .syntax--support.syntax--constant.syntax--property-value.syntax--css,
   &.syntax--property-value .syntax--support.syntax--constant.syntax--property-value.syntax--css {
-    color: #F9EE98;
+    color: @syntax-color-two;
   }
 
   &.syntax--preprocessor.syntax--at-rule .syntax--keyword.syntax--control.syntax--at-rule {
@@ -262,7 +262,7 @@
 
   &.syntax--property-value .syntax--support.syntax--constant.syntax--named-color.syntax--css,
   &.syntax--property-value .syntax--constant {
-    color: #87C38A;
+    color: @syntax-color-two;
   }
 
   &.syntax--constructor.syntax--argument.syntax--css {
