@@ -4,6 +4,6 @@ This is a modification of Atom's dark syntax theme, primarily focusing on reduci
 
 ![first screenshot](images/fox.png "That public class docstring is pretty awful.")
 
-You will want to use a font supporting multiple weights and true italics. I recommend Pragmata Pro, but any font meeting those requirements will work.
+You will want to use a font supporting multiple weights and true italics. I recommend Iosevka, but any font meeting those requirements will work.
 
 To modify the main colors (purple and red), just change `@syntax-color-value` and `@syntax-color-function` in the `syntax-variables.less` file. There are also lines in there with alternate colors that you should uncomment if you're protanomalic or tritanomalic.
